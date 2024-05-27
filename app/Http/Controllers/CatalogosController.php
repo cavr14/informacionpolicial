@@ -24,11 +24,6 @@ class CatalogosController extends Controller
     }
 
 //----------------------- ENTIDADES BANCARIAs -----------------------------------------------------------------------
-<<<<<<< HEAD
-=======
-
-//----------------------- ENTIDADES BANCARIAs -----------------------------------------------------------------------
->>>>>>> 515d643041c0c1deff8cf41d9c998feec632b747
     public function entidadBancariaGet(): View
     {
         $entidadBancaria = entidadBancaria::where('estado', 1)->get();
@@ -71,11 +66,7 @@ class CatalogosController extends Controller
             "breadcrumbs" => [
                 "Inicio" => url("/"),
                 "Entidades Bancarias" => url("/catalogos/entidadBancaria"),
-<<<<<<< HEAD
                 "Inactivas" => url("/catalogos/entidadBancaria/eliminada")
-=======
-                "Inactivas" => url("/catalogos/entidadBancaria/eliminada"),
->>>>>>> 515d643041c0c1deff8cf41d9c998feec632b747
             ]
         ]);
     }
@@ -160,11 +151,6 @@ class CatalogosController extends Controller
     }
     
 //-------------------- SUCURSALES ----------------------------------------------------------
-<<<<<<< HEAD
-=======
-    
-//-------------------- SUCURSALES ----------------------------------------------------------
->>>>>>> 515d643041c0c1deff8cf41d9c998feec632b747
     public function sucursalGet(): View
     {
         $sucursal = Sucursal::where('estado', 1)->get();
@@ -242,11 +228,7 @@ class CatalogosController extends Controller
             "breadcrumbs" => [
                 "Inicio" => url("/"),
                 "Sucursales" => url("/catalogos/sucursal"),
-<<<<<<< HEAD
                 "Inactivas" => url("/catalogos/sucursal/eliminada")
-=======
-                "Inactivas" => url("/catalogos/sucursal/eliminada"),
->>>>>>> 515d643041c0c1deff8cf41d9c998feec632b747
             ]
         ]);
     }
